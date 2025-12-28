@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Wood Fire Pizza</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+      
+        /* 🍕 Logo-Derived Evening Pizza Theme 🍕 */
+        :root { 
+            /* Extracted from Logo */
+            --brick-red: #8D3621;       /* "MAM'S PIZZA" Red */
+            --mustard-yellow: #C88C32;  /* Cheese/Mustard Circle Yellow */
+            --crust-brown: #2D1B10;     /* Charred Wood / Outline Brown */
+            --logo-cream: #EFE5D3;      /* Vintage Cream Background from Logo */
+            
+            /* Theme Logic */
+            --evening-bg: #1A110B;      /* Deep Dusk Brown (Base Background) */
+            --text-light: #EFE5D3;      /* Muted Cream (Primary Text) */
+            --card-dark: #24160E;       /* Crust Brown (Card Background) */
+            --card-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+        }
+        
+            body { font-family: 'Poppins', sans-serif; background-color: var(--evening-bg); color: var(--text-light); }
+            
+        /* Navbar - Charred Crust Brown */
+        .navbar { 
+            background-color: #0F0906; /* Solid Darker Brown */
+            padding: 15px 0; 
+            box-shadow: 0 2px 15px rgba(0,0,0,0.7);
+            border-bottom: 1px solid var(--mustard-yellow);
+        }
+        .navbar-brand { font-family: 'Satisfy', cursive; font-size: 1.8rem; color: var(--mustard-yellow) !important; }
+        .nav-link { color: var(--text-light) !important; transition: 0.3s; font-weight: 500; }
+        .nav-link:hover, .nav-link.active { color: var(--mustard-yellow) !important; }
+        
+        .contact-card { background: var(--card-dark); border-radius: 20px; padding: 40px; border: 1px solid rgba(255, 140, 0, 0.2); }
+        .form-control { background: #33211d; border: 1px solid #4d322c; color: white; }
+        .form-control:focus { background: #3d2823; color: white; border-color: var(--warm-orange); box-shadow: none; }
+        
+        .btn-custom { background-color: var(--maroon); color: white; border: 1px solid var(--warm-orange); border-radius: 50px; font-weight: 600; padding: 12px; transition: 0.3s; }
+        .btn-custom:hover { background-color: var(--warm-orange); color: white; }
+
+        .info-box i { color: var(--warm-orange); font-size: 1.5rem; margin-right: 15px; }
+        .social-follow a { color: var(--warm-orange); font-size: 2rem; margin-right: 20px; transition: 0.3s; }
+        .social-follow a:hover { color: white; transform: scale(1.2); }
+        
+        footer { background-color: #000; color: white; padding: 30px 0; margin-top: 50px; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Wood Fire Pizza</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container py-5">
+        <h2 class="text-center fw-bold mb-5 display-4" style="color: var(--warm-orange);">Get In Touch</h2>
+        <div class="row g-5">
+            <div class="col-md-6">
+                <div class="contact-card shadow">
+                    <form>
+                        <div class="mb-3"><label class="form-label">Full Name</label><input type="text" class="form-control" placeholder="Enter your name"></div>
+                        <div class="mb-3"><label class="form-label">Phone Number</label><input type="tel" class="form-control" placeholder="Enter phone number"></div>
+                        <div class="mb-3"><label class="form-label">Message</label><textarea class="form-control" rows="4" placeholder="Your message..."></textarea></div>
+                        <button type="submit" class="btn btn-custom w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="info-box mb-5">
+                    <h4 class="fw-bold mb-4" style="color: var(--warm-orange);">Operating Hours</h4>
+                    <p class="mb-2"><i class="far fa-clock"></i> Mon - Thu: 12:00 PM - 10:00 PM</p>
+                    <p class="mb-2"><i class="far fa-clock"></i> Fri - Sat: 12:00 PM - 11:30 PM</p>
+                    <p class="mb-2"><i class="far fa-clock"></i> Sunday: 01:00 PM - 09:00 PM</p>
+                </div>
+
+                <div class="info-box mb-5">
+                    <h4 class="fw-bold mb-4" style="color: var(--warm-orange);">Follow Us</h4>
+                    <div class="social-follow">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                
+                <div class="info-box">
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Pizza Street, New York, NY</p>
+                    <p><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        /* Footer Expansion Styles */
+        footer {
+            background-color: #000;
+            color: white;
+            padding: 60px 0 30px 0;
+            border-top: 2px solid var(--maroon);
+        }
+        footer h5 {
+            color: var(--warm-orange);
+            font-weight: 700;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        footer ul li {
+            margin-bottom: 12px;
+        }
+        footer ul li a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: 0.3s;
+            font-size: 0.95rem;
+        }
+        footer ul li a:hover {
+            color: var(--warm-orange);
+            padding-left: 5px;
+        }
+        .footer-contact p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+        }
+        .footer-contact i {
+            color: var(--warm-orange);
+            width: 25px;
+        }
+        .footer-social-icons a {
+            color: white;
+            background: var(--maroon);
+            width: 35px;
+            height: 35px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-right: 10px;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+        .footer-social-icons a:hover {
+            background: var(--warm-orange);
+            transform: translateY(-3px);
+        }
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 40px;
+            padding-top: 20px;
+        }
+    </style>
+    
+    <!-- Expanded Footer -->
+    <footer class="text-start">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Column 1: Brand & About -->
+                <div class="col-md-3">
+                    <a class="navbar-brand mb-3 d-block" href="index.html" style="font-family: 'Satisfy', cursive; font-size: 2rem; color: var(--warm-orange) !important; text-decoration: none;">Wood Fire Pizza</a>
+                    <p class="small opacity-75">Bringing the ancient tradition of wood-fire cooking to your table. Hand-stretched dough, premium oak wood, and 90-second perfection.</p>
+                    <div class="footer-social-icons mt-4">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+    
+                <!-- Column 2: Quick Links -->
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="index.html#order-section">Place Order</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Column 3: Our Recipes -->
+                <div class="col-md-3">
+                    <h5>Popular Recipes</h5>
+                    <ul>
+                        <li><a href="#">Classic Margherita</a></li>
+                        <li><a href="#">Spicy Pepperoni</a></li>
+                        <li><a href="#">Smoky Beef Feast</a></li>
+                        <li><a href="#">Wood-Grilled BBQ Burger</a></li>
+                        <li><a href="#">Special Stone Oven Kebab</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Column 4: Contact Details -->
+                <div class="col-md-3 footer-contact">
+                    <h5>Contact Info</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Pizza Street, New York, NY 10001</p>
+                    <p><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@woodfirepizza.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Sun: 12:00 PM - 11:00 PM</p>
+                </div>
+            </div>
+    
+            <!-- Copyright Bar -->
+            <div class="footer-bottom text-center">
+                <p class="mb-0 small opacity-50">&copy; 2025 Wood Fire Pizza. All Rights Reserved. Crafted for Authentic Taste.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
